@@ -1,6 +1,6 @@
 # Atlassian Scripts
 
-This is a small collection of scripts used within Jira and Confluence. These scripts are designed to automate various tasks and enhance functionality in Atlassian products.
+This is a small collection of scripts used within Jira, Confluence, and Insight. These scripts are designed to automate various tasks and enhance functionality in Atlassian products.
 
 ## Contents
 
@@ -9,6 +9,7 @@ This is a small collection of scripts used within Jira and Confluence. These scr
    - Validators
    - Post Functions
    - ScriptRunner Scripts
+   - Behaviours
 
 2. Confluence Scripts
    - ScriptRunner Scripts
@@ -21,15 +22,20 @@ This is a small collection of scripts used within Jira and Confluence. These scr
 
 ### REST Endpoints
 - CreateIssueFromJenkins.groovy: A script to create Jira issues from Jenkins.
+- ExampleRestEndpoint.groovy: Demonstrates receiving XML data, processing it, and returning a JSON response.
 
 ### Validators
 - UserIsProjectAdmin.groovy: Validates if a user is a project admin or lead.
 
 ### Post Functions
-- StartJenkinsJob.groovy: Triggers a Jenkins job from a Jira post function.
+- StartJenkinsJob.groovy: Triggers a Jenkins job from a Jira post function based on custom field values.
 
 ### ScriptRunner Scripts
 - BulkRemoveProjects.groovy: Bulk removes Jira projects based on a CSV input file.
+
+### Behaviours
+- CustomErrorEmptyField.groovy: Validates that the "Fix Version/s" field is not empty and displays an error message if it is.
+- DisplayFieldBasedOnComponent.groovy: Controls the visibility and requirement of subcomponent fields based on the selected components in the main component field.
 
 ## Confluence Scripts
 
@@ -47,7 +53,7 @@ This is a small collection of scripts used within Jira and Confluence. These scr
 
 ## Usage
 
-Each script is designed for a specific purpose within Jira, Confluence, or Insight. Please refer to the individual script files for detailed usage instructions and any required setup.
+Each script is designed for a specific purpose within Jira, Confluence, or Insight. Please refer to the individual script files for detailed usage instructions and any required setup. Many scripts include comments at the top explaining their purpose and how to use them.
 
 ## Contributing
 
