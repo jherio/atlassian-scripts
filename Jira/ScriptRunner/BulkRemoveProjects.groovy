@@ -1,3 +1,9 @@
+/*
+ * BulkRemoveProjects.groovy
+ * 
+ * This script will bulk remote Jira projects passed in via CSV. /sharedhome/files/projects_to_remove.csv
+ */
+
 import com.atlassian.jira.component.ComponentAccessor
 import com.atlassian.jira.bc.project.DefaultProjectService
 import com.atlassian.jira.util.ErrorCollection
@@ -6,10 +12,6 @@ import com.atlassian.jira.bc.project.ProjectService.DeleteProjectValidationResul
 import com.atlassian.jira.project.ProjectManager
 import com.atlassian.jira.bc.project.ProjectService
 import org.apache.log4j.Logger
-
-/*
-This script will bulk remote Jira projects passed in via CSV. /sharedhome/files/projects_to_remove.csv
-*/
 
 def u = ComponentAccessor.getJiraAuthenticationContext().getLoggedInUser();
 def ps = ComponentAccessor.getComponent (DefaultProjectService.class);
